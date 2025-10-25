@@ -117,7 +117,7 @@ const TopicSelector: React.FC<TopicSelectorProps> = ({ onStartQuiz, onViewBookma
     return (
         <div className="w-full">
             <header className="flex justify-between items-center mb-10">
-                 <h1 className="text-3xl font-bold text-white">Legal Eagle</h1>
+                 <h1 className="text-3xl font-bold text-white">LexRam</h1>
                  <div className="flex items-center gap-2">
                     <div className="bg-zinc-800 text-white font-bold p-2 rounded-lg flex items-center gap-2" title="Total Points">
                         <PointsIcon />

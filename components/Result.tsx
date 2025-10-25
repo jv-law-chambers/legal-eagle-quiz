@@ -19,7 +19,7 @@ const Result: React.FC<ResultProps> = ({ score, totalQuestions, onRestart, onVie
 
   let feedback = '';
   if (percentage === 100) {
-    feedback = 'Perfect Score! You are a true Legal Eagle!';
+    feedback = 'Perfect Score! You are a true LexRam!';
   } else if (percentage >= 80) {
     feedback = 'Excellent work! Your legal knowledge is impressive.';
   } else if (percentage >= 50) {
@@ -29,13 +29,13 @@ const Result: React.FC<ResultProps> = ({ score, totalQuestions, onRestart, onVie
   }
 
   const handleShare = async () => {
-    const shareText = `I just scored ${score}/${totalQuestions} on the "${topic}" (${difficulty}) quiz in Legal Eagle! Think you can do better? #LegalEagleQuiz`;
+    const shareText = `I just scored ${score}/${totalQuestions} on the "${topic}" (${difficulty}) quiz in LexRam! Think you can do better? #LegalEagleQuiz`;
 
     // 1. Try Web Share API
     if (navigator.share) {
         try {
             await navigator.share({
-                title: 'Legal Eagle Quiz Challenge!',
+                title: 'LexRam Quiz Challenge!',
                 text: shareText,
                 url: window.location.href,
             });
