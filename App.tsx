@@ -197,7 +197,7 @@ const App: React.FC = () => {
                 {renderContent()}
             </main>
              <footer className="absolute bottom-4 text-zinc-600 text-sm">
-                Powered by Gemini API
+                Curated with Love, by LexRam
             </footer>
         </div>
     );
